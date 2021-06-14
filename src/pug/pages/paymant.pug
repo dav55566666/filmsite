@@ -1,0 +1,101 @@
+extends ../layout/layout.pug
+
+block variables
+  - var title = 'Main';
+
+block links
+  - var link = 'main.css';
+
+block scripts
+  - var js = 'index.js';
+
+block header
+  include ../blocks/header.pug
+
+block content
+  .big_Container.paymant
+    .paymant_cont
+      .paymant_cont_form
+        .paymant_cont_form_top
+          .paymant_cont_form_top_first
+            img(src="img/checkasc1.svg")
+            p Òºð ìÖ²ðàôØÀ Ð²æàÔàôÂÚ²Ø´ Î²î²ðìºÈ ¾
+          .paymant_cont_form_top_last
+            img(src="img/1200px-QR_code_for_mobile_English_Wikipedia 1.svg")
+            p QR Îà¸ êÎ²Ü²ìàðØ²Ü Ð²Ø²ð
+        h1 ¶Üàð¸Æ îìÚ²ÈÜºðÀ
+        form
+          .paymant_cont_form_item
+            label ØºøºÜ²ÚÆ Ð²Ø²ð²ÜÆÞºð*
+              input(type="text" placeholder="34 AV 134")
+            label Î²Ú²ÜØ²Ü Ð²Ø²ð²ÜÆÞ*
+              input(type="text" placeholder="D12")
+          .paymant_cont_form_item
+            label ²ÜàôÜ
+              input(type="text" placeholder="River")
+            label ²¼¶²ÜàôÜ
+              input(type="text" placeholder="Sideyan")
+          .paymant_cont_form_item
+            label Ðºè²Êàê²Ð²Ø²ð*
+              input(type="text" placeholder="+374 93 65 88 88")
+            label ¾È.Ð²êòº
+              input(type="text" placeholder="riverside@gmail.com")
+          .paymant_cont_form_item_comment
+            label ²ìºÈÆÜ
+              textarea
+          .paymant_cont_form_item_btn
+            label ØºøºÜ²ÚÆ îºê²ÎÀ
+              input(type="text" placeholder="SUV/Jeep")
+              a
+                include ../../img/clear.svg
+        p.last_p Լորեմ Իպսումը տպագրական արդյունաբերության համար նախատեսված մոդելային տեքստ է։
+      .paymant_cont_itog
+        h2 ä²îìÆðì²Ì Æðºð
+        .paymant_cont_itog_item
+          p îð²Üêäàðî²ÚÆÜ îàØê
+            span 1x
+          p 4000¸ð©
+        .paymant_cont_itog_item
+          p Ð²ìÆ ´àôð¶ºð (ÎÌàô)
+            span 1x
+          p 600¸ð©
+        .paymant_cont_itog_item
+          p êààôê
+            span 1x
+          p 1800¸ð©
+        .paymant_cont_itog_item
+          p ²Ôò²Ü Îºê²ð
+            span 1x
+          p 1200¸ð©
+        .paymant_cont_itog_item
+          p Ð²ìÆ ÂºìÆÎÜºð
+            span 1x
+          p 1400¸ð©
+        .paymant_cont_itog_item_itogprice
+          p ÀÜ¸Ð²Üàôð ²ðÄºøÀ
+          p 5000¸ð©
+        form
+          h4 ìÖ²ðºÈ
+          .paymant_cont_itog_flex
+            label
+              input(type="checkbox")
+              span.chek
+              .paymant_cont_itog_flex_text
+                p ²Ú¸Æ ´²ÜÎ (Æ¸ð²Ø)
+                span Լորեմ Իպսումը տպագրական արդյունաբերության համար նախատեսված մոդելային տեքստ է։
+            label
+              input(type="checkbox")
+              span.chek
+              .paymant_cont_itog_flex_text
+                p ¾ìàÎ² ´²ÜÎ
+                span Լորեմ Իպսումը տպագրական արդյունաբերության համար նախատեսված մոդելային տեքստ է։
+          h2 îàØêÆ îìÚ²ÈÜºðÀ
+          .paymant_cont_itog_flex_btn
+            button 
+              include ../../img/topcoat_print.svg
+              |îäºÈ 
+            button
+              include ../../img/mdi-light_download.svg
+              |Üºð´ºèÜºÈ
+block footer
+  include ../blocks/footer.pug

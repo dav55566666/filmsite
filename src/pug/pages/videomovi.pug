@@ -1,0 +1,204 @@
+extends ../layout/layout.pug
+
+block variables
+  - var title = 'Main';
+
+block links
+  - var link = 'main.css';
+
+block scripts
+  - var js = 'index.js';
+
+block header
+  include ../blocks/header.pug
+
+block content
+  .big_Container.movie
+    .movie_cont
+      .movie_cont_left
+        .movie_cont_left_video
+          video.vid_show(src='img/adasd_vnG0VlFp.compressed.mp4', controls="controls")
+        .movie_cont_left_bottom
+          h1 Ð²ððÆ öàÂºð
+            span (2018)
+          p Լորեմ Իպսումը տպագրության և տպագրական արդյունաբերության համար նախատեսված մոդելային տեքստ է։ Սկսած 1500-ականներից՝ Լորեմ Իպսումը հանդիսացել է տպագրական արդյունաբերության ստանդարտ մոդելային տեքստ, ինչը մի անհայտ տպագրիչի կողմից տարբեր տառատեսակների օրինակների գիրք ստեղծելու ջանքերի արդյունք է։ Այս տեքստը ոչ միայն կարողացել է գոյատևել հինգ դարաշրջան, այլև ներառվել է էլեկտրոնային տպագրության մեջ՝ մնալով էապես անփոփոխ։
+          p Այն հայտնի է դարձել 1960-ականներին Lorem Ipsum բովանդակող Letraset էջերի թողարկման արդյունքում, իսկ ավելի ուշ համակարգչային տպագրության այնպիսի ծրագրերի թողարկման հետևանքով, ինչպիսին է Aldus PageMaker-ը, որը ներառում է Լորեմ Իպսումի տարատեսակներ։Լորեմ Իպսումը տպագրության և տպագրական արդյունաբերության համար նախատեսված մոդելային տեքստ է։ Սկսած 1500-ականներից՝ Լորեմ Իպսումը հանդիսացել է տպագրական արդյունաբերության ստանդարտ մոդելային տեքստ, ինչը մի անհայտ տպագրիչի կողմից տարբեր տառատեսակների օրինակների գիրք ստեղծելու ջանքերի արդյունք է։ Այս տեքստը ոչ միայն կարողացել է գոյատևել հինգ դարաշրջան, այլև ներառվել է էլեկտրոնային տպագրության մեջ՝ մնալով էապես անփոփոխ։Լորեմ Իպսումը տպագրության և տպագրական արդյունաբերության համար նախատեսված մոդելային տեքստ է։ Սկսած 1500-ականներից՝ Լորեմ Իպսումը հանդիսացել է տպագրական արդյունաբերության ստանդարտ մոդելային տեքստ, ինչը մի անհայտ տպագրիչի կողմից տարբեր տառատեսակների օրինակների գիրք ստեղծելու ջանքերի արդյունք է։
+          button.show_all_info Î²ð¸²È ²ìºÈÆÜ
+            include ../../img/Shape1.svg
+      .movie_cont_right
+        .movie_cont_right_kino
+          .movie_cont_right_kino_img
+            img(src="img/placeholder2.png")
+            span 4000¸ð©
+          .movie_cont_right_bottom
+            .movie_cont_right_bottom_item
+              .starts
+                img(src="img/star.svg")
+                img(src="img/star.svg")
+                img(src="img/star.svg")
+                img(src="img/star.svg")
+              p KinoPoisk
+            .movie_cont_right_bottom_item
+              .starts
+                img(src="img/star.svg")
+                img(src="img/star.svg")
+                img(src="img/star.svg")
+                img(src="img/star.svg")
+              p IMDb
+        .movie_cont_right_mount
+          .movie_cont_right_mount_top
+            .movie_cont_right_mount_top_time
+              h4 îàØêÆ Ø²Üð²Ø²êÜºðÀ
+              .movie_cont_right_mount_top_time_flex
+                .movie_cont_right_mount_top_time_flex_item
+                  button 14 :40
+                  p êº²Üê 1
+                .movie_cont_right_mount_top_time_flex_item
+                  button 14 :40
+                  p êº²Üê 1
+            .movie_cont_right_mount_top_right
+              img(src="img/Asset12.png")
+              .movie_cont_right_mount_top_slide
+                button.arrov_prev1
+                  include ../../img/Shape1.svg
+                .swiper-container.mount
+                  .swiper-wrapper
+                    .swiper-slide
+                      p ²äðÆÈ,2021
+                button.arrov_next1
+                  include ../../img/Shape1.svg
+          .movie_cont_right_mount_days_swiper
+            button.arrov_prev2
+              include ../../img/Shape1.svg
+            .swiper-container.mount_days
+              .swiper-wrapper
+                .swiper-slide
+                  p ºðÎ.
+                  span 23
+                .swiper-slide
+                  p ºðºø.
+                  span 24
+                .swiper-slide
+                  p âàð.
+                  span 25
+                .swiper-slide
+                  p ÐÆÜ¶.
+                  span 26
+                .swiper-slide
+                  p àôð´.
+                  span 27
+                .swiper-slide
+                  p Þ²´.
+                  span 28
+                .swiper-slide
+                  p ÎÆð.
+                  span 29
+            button.arrov_next2
+              include ../../img/Shape1.svg
+          .movie_cont_right_mount_bottom
+            .movie_cont_right_mount_bottom_left
+              h4 îàØêÆ îºê²ÎÀ
+              label
+                input(type='checkbox')
+                span
+                p ²ØºÜ²¶Ü²òÆ îàØê
+              label
+                input(type='checkbox')
+                span
+                p êº¸²ÜÆ îàØê
+              label
+                input(type='checkbox')
+                span
+                p ØºÎ ²ÜÒÆ îàØê
+            .movie_cont_right_mount_bottom_img
+              img(src="img/Group262.png")
+        button.movie_cont_right_btn ²ìºÈ²òÜºÈ ø²ðîÆÜ
+        .movie_cont_right_sites
+          p ÎÆêìºÈ
+          .movie_cont_right_sites_flex
+            a
+              include ../../img/socasdial01.svg
+            a
+              include ../../img/socialacs02.svg
+            a
+              include ../../img/sociascacsal03.svg
+            a
+              include ../../img/sociascaal04.svg
+            a
+              include ../../img/sociascal05.svg
+            a
+              include ../../img/sociawdwadal05.svg
+  .big_Container.films_slide
+    .films_slide_cont
+      .films_slide_cont_title
+        h2 ²è²æ²ðÎìàôØ ¾ 
+        .btn
+          button.prev_ssale.prev_ssale2
+            include ../../img/Shape.svg
+          .swiper-pagination.swiper-pagination2
+          button.next_ssale.next_ssale2
+            include ../../img/Shape.svg
+      .films_slide_cont_slide.swiper-container.swiper-container3
+        .swiper-wrapper
+          .swiper-slide.films_slide_cont_slide_item
+            .films_slide_cont_slide_item_img
+              img(src="img/slidefilimg.png")
+              span.top_title 4000¸ð©
+              span.bottom_title 24.03.2021
+            h3 :Ð²ððÆ öàÂºð
+            p 18 : 40
+            button.add
+              include ../../img/action.svg
+          .swiper-slide.films_slide_cont_slide_item
+            .films_slide_cont_slide_item_img
+              img(src="img/slidefilimg.png")
+              span.top_title 4000¸ð©
+              span.bottom_title 24.03.2021
+            h3 :Ð²ððÆ öàÂºð
+            p 18 : 40
+            button.add
+              include ../../img/action.svg
+          .swiper-slide.films_slide_cont_slide_item
+            .films_slide_cont_slide_item_img
+              img(src="img/slidefilimg.png")
+              span.top_title 4000¸ð©
+              span.bottom_title 24.03.2021
+            h3 :Ð²ððÆ öàÂºð
+            p 18 : 40
+            button.add
+              include ../../img/action.svg
+          .swiper-slide.films_slide_cont_slide_item
+            .films_slide_cont_slide_item_img
+              img(src="img/slidefilimg.png")
+              span.top_title 4000¸ð©
+              span.bottom_title 24.03.2021
+            h3 :Ð²ððÆ öàÂºð
+            p 18 : 40
+            button.add
+              include ../../img/action.svg
+  .big_Container.partner
+    .partner_cont
+      .partner_cont_item
+        include ../../img/Group7.svg
+      .partner_cont_item
+        include ../../img/Group8.svg
+      .partner_cont_item
+        include ../../img/Group9.svg
+      .partner_cont_item
+        include ../../img/Group10.svg
+      .partner_cont_item
+        include ../../img/Group11.svg
+      .partner_cont_item
+        include ../../img/Group12.svg
+      .partner_cont_item
+        include ../../img/Group13.svg
+  .big_Container.movi_form
+    .movi_form_cont
+      h2 ´²Ä²Üàð¸²¶ðìºø Üàð²¶àôÚÜ üÆÈØºðÆ ÜàðàôÂÚàôÜÜºðÆ Ð²Ø²ð
+      form
+        label.text
+          input(type="text" placeholder="Øàôîø²¶ðºø Òºð ¾È․Ð²êòºÜ")
+        label.btn
+          input(type="submit" value="´²Ä²Üàð¸²¶ðìºÈ")
+block footer
+  include ../blocks/footer.pug

@@ -1,0 +1,244 @@
+extends ../layout/layout.pug
+
+block variables
+  - var title = 'Main';
+
+block links
+  - var link = 'main.css';
+
+block scripts
+  - var js = 'index.js';
+
+block header
+  include ../blocks/header.pug
+
+block content
+  .page_obaut
+    .big_Container.obaut_home
+      .obaut_home_cont
+        .obaut_home_cont_text
+          h2 ØÆ øÆâ Øºð Ø²êÆÜ
+          p Լորեմ Իպսումը տպագրական արդյունաբերության համար նախատեսված մոդելային տեքստ է։ Սկսած 1500-ականներից՝ Լորեմ Իպսումը հանդիսացել է տպագրական արդյունաբերության ստանդարտ մոդելային տեքստ, ինչը մի անհայտ տպագրիչի կողմից տարբեր տառատեսակների օրինակների գիրք ստեղծելու ջանքերի արդյունք է։ Այս տեքստը ոչ միայն կարողացել է գոյատևել հինգ դարաշրջան, այլև ներառվել է էլեկտրոնային տպագրության մեջ՝ մնալով էապես անփոփոխ։ 
+          a ÆØ²Ü²È ²ìºÈÆÜ
+        .obaut_home_cont_video.video_block_box
+          img(src="img/Group 189.png").vid_img_hide
+          button.play_vid
+            include ../../img/btnPlay.svg
+          video.vid_show(src='img/adasd_vnG0VlFp.compressed.mp4', playsinline='', autobuffer='', loop='', muted='')
+    .big_Container.content
+      .content_cont
+        .content_cont_left
+          h2 ÆÜâäºê Øº¼ ¶îÜºÈ
+          p ԹՈՂԵՔ ՁՈՐ ՀԱՂՈՐԴԱԳՐՈՒԹՅՈՒՆԸ
+          form
+            label
+              input(type="text" placeholder="անուն")
+            label
+              input(type="text" placeholder="riverside@gmail.com")
+            label
+              textarea(placeholder="ՁԵՐ ՀԱՂՈՐԴԱԳՐՈՒԹՅՈՒՆԸ")
+            label
+              input(type="submit" value="àÔÔ²ðÎºÈ Ü²Ø²Î")
+        .content_cont_right
+          .content_cont_right_img
+            img(src="img/Assecsat12.png")
+          a
+            include ../../img/maps-and-flags11.svg
+            |Infomation technologies building, Victoria Island, Lagos, Nigeria.
+          a
+            include ../../img/ascascacs.svg
+            |+234 081-1236-4568
+          a
+            include ../../img/emacascaasc.svg
+            |hello@info.com.ng
+          .sites
+            a
+              include ../../img/Vectacsacsor.svg
+            a
+              include ../../img/Vectascascor.svg
+            a
+              include ../../img/Vacsacsector.svg
+            a
+              include ../../img/cassacacor.svg
+            a
+              include ../../img/VeacsacsVSctor.svg
+          iframe(src="https://yandex.ru/map-widget/v1/-/CCU4QAbj2D")
+    .big_Container.sale
+      .sale_cont
+        .sale_cont_title
+          h1 ÜÎ²ðÜºð
+          .btn
+            button.prev_ssale.prev_ssale1
+              include ../../img/Shape.svg
+            .swiper-pagination.swiper-pagination1
+            button.next_ssale.next_ssale1
+              include ../../img/Shape.svg
+        .swiper-container.swiper-container2
+          .swiper-wrapper
+            .swiper-slide.sale_cont_flex
+              .sale_cont_flex_item.sale_cont_flex_item3.sale_cont_flex_item_video.video_block_box
+                button.play_vid
+                  include ../../img/btnPlay.svg
+                video.vid_show(src='img/adasd_vnG0VlFp.compressed.mp4', playsinline='', autobuffer='', loop='', muted='')
+              .sale_cont_flex_item.sale_cont_flex_item2.video_block_box
+                img(src="img/placeholder.png").vid_img_hide
+                video.vid_show(src='img/adasd_vnG0VlFp.compressed.mp4', playsinline='', autobuffer='', loop='', muted='')
+              .sale_cont_flex_item.sale_cont_flex_item2.video_block_box
+                img(src="img/placeholder.png").vid_img_hide
+                video.vid_show(src='img/adasd_vnG0VlFp.compressed.mp4', playsinline='', autobuffer='', loop='', muted='')
+              .sale_cont_flex_item.sale_cont_flex_item2.video_block_box
+                img(src="img/placeholder.png").vid_img_hide
+                video.vid_show(src='img/adasd_vnG0VlFp.compressed.mp4', playsinline='', autobuffer='', loop='', muted='')
+              .sale_cont_flex_item.sale_cont_flex_item2.video_block_box
+                img(src="img/placeholder.png").vid_img_hide
+                video.vid_show(src='img/adasd_vnG0VlFp.compressed.mp4', playsinline='', autobuffer='', loop='', muted='')
+              .sale_cont_flex_item.sale_cont_flex_item2.video_block_box
+                img(src="img/placeholder.png").vid_img_hide
+                video.vid_show(src='img/adasd_vnG0VlFp.compressed.mp4', playsinline='', autobuffer='', loop='', muted='')
+              .sale_cont_flex_item.sale_cont_flex_item2.video_block_box
+                img(src="img/placeholder.png").vid_img_hide
+                video.vid_show(src='img/adasd_vnG0VlFp.compressed.mp4', playsinline='', autobuffer='', loop='', muted='')
+              .sale_cont_flex_item.sale_cont_flex_item2.video_block_box
+                img(src="img/placeholder.png").vid_img_hide
+                video.vid_show(src='img/adasd_vnG0VlFp.compressed.mp4', playsinline='', autobuffer='', loop='', muted='')
+              .sale_cont_flex_item.sale_cont_flex_item2.video_block_box
+                img(src="img/placeholder.png").vid_img_hide
+                video.vid_show(src='img/adasd_vnG0VlFp.compressed.mp4', playsinline='', autobuffer='', loop='', muted='')
+              .sale_cont_flex_item.sale_cont_flex_item3.sale_cont_flex_item_video.video_block_box
+                button.play_vid
+                  include ../../img/btnPlay.svg
+                video.vid_show(src='img/adasd_vnG0VlFp.compressed.mp4', playsinline='', autobuffer='', loop='', muted='')
+              .sale_cont_flex_item.sale_cont_flex_item2.video_block_box
+                img(src="img/placeholder.png").vid_img_hide
+                video.vid_show(src='img/adasd_vnG0VlFp.compressed.mp4', playsinline='', autobuffer='', loop='', muted='')
+              .sale_cont_flex_item.sale_cont_flex_item2.video_block_box
+                img(src="img/placeholder.png").vid_img_hide
+                video.vid_show(src='img/adasd_vnG0VlFp.compressed.mp4', playsinline='', autobuffer='', loop='', muted='')
+              .sale_cont_flex_item.sale_cont_flex_item2.video_block_box
+                img(src="img/placeholder.png").vid_img_hide
+                video.vid_show(src='img/adasd_vnG0VlFp.compressed.mp4', playsinline='', autobuffer='', loop='', muted='')
+              .sale_cont_flex_item.sale_cont_flex_item2.video_block_box
+                img(src="img/placeholder.png").vid_img_hide
+                video.vid_show(src='img/adasd_vnG0VlFp.compressed.mp4', playsinline='', autobuffer='', loop='', muted='')
+              .sale_cont_flex_item.sale_cont_flex_item3.sale_cont_flex_item_video.video_block_box
+                button.play_vid
+                  include ../../img/btnPlay.svg
+                video.vid_show(src='img/adasd_vnG0VlFp.compressed.mp4', playsinline='', autobuffer='', loop='', muted='')
+              .sale_cont_flex_item.sale_cont_flex_item2.video_block_box
+                img(src="img/placeholder.png").vid_img_hide
+                video.vid_show(src='img/adasd_vnG0VlFp.compressed.mp4', playsinline='', autobuffer='', loop='', muted='')
+              .sale_cont_flex_item.sale_cont_flex_item2.video_block_box
+                img(src="img/placeholder.png").vid_img_hide
+                video.vid_show(src='img/adasd_vnG0VlFp.compressed.mp4', playsinline='', autobuffer='', loop='', muted='')
+            .swiper-slide.sale_cont_flex
+              .sale_cont_flex_item.sale_cont_flex_item3.sale_cont_flex_item_video.video_block_box
+                button.play_vid
+                  include ../../img/btnPlay.svg
+                video.vid_show(src='img/adasd_vnG0VlFp.compressed.mp4', playsinline='', autobuffer='', loop='', muted='')
+              .sale_cont_flex_item.sale_cont_flex_item2.video_block_box
+                img(src="img/placeholder.png").vid_img_hide
+                video.vid_show(src='img/adasd_vnG0VlFp.compressed.mp4', playsinline='', autobuffer='', loop='', muted='')
+              .sale_cont_flex_item.sale_cont_flex_item2.video_block_box
+                img(src="img/placeholder.png").vid_img_hide
+                video.vid_show(src='img/adasd_vnG0VlFp.compressed.mp4', playsinline='', autobuffer='', loop='', muted='')
+              .sale_cont_flex_item.sale_cont_flex_item2.video_block_box
+                img(src="img/placeholder.png").vid_img_hide
+                video.vid_show(src='img/adasd_vnG0VlFp.compressed.mp4', playsinline='', autobuffer='', loop='', muted='')
+              .sale_cont_flex_item.sale_cont_flex_item2.video_block_box
+                img(src="img/placeholder.png").vid_img_hide
+                video.vid_show(src='img/adasd_vnG0VlFp.compressed.mp4', playsinline='', autobuffer='', loop='', muted='')
+              .sale_cont_flex_item.sale_cont_flex_item2.video_block_box
+                img(src="img/placeholder.png").vid_img_hide
+                video.vid_show(src='img/adasd_vnG0VlFp.compressed.mp4', playsinline='', autobuffer='', loop='', muted='')
+              .sale_cont_flex_item.sale_cont_flex_item2.video_block_box
+                img(src="img/placeholder.png").vid_img_hide
+                video.vid_show(src='img/adasd_vnG0VlFp.compressed.mp4', playsinline='', autobuffer='', loop='', muted='')
+              .sale_cont_flex_item.sale_cont_flex_item2.video_block_box
+                img(src="img/placeholder.png").vid_img_hide
+                video.vid_show(src='img/adasd_vnG0VlFp.compressed.mp4', playsinline='', autobuffer='', loop='', muted='')
+              .sale_cont_flex_item.sale_cont_flex_item2.video_block_box
+                img(src="img/placeholder.png").vid_img_hide
+                video.vid_show(src='img/adasd_vnG0VlFp.compressed.mp4', playsinline='', autobuffer='', loop='', muted='')
+              .sale_cont_flex_item.sale_cont_flex_item3.sale_cont_flex_item_video.video_block_box
+                button.play_vid
+                  include ../../img/btnPlay.svg
+                video.vid_show(src='img/adasd_vnG0VlFp.compressed.mp4', playsinline='', autobuffer='', loop='', muted='')
+              .sale_cont_flex_item.sale_cont_flex_item2.video_block_box
+                img(src="img/placeholder.png").vid_img_hide
+                video.vid_show(src='img/adasd_vnG0VlFp.compressed.mp4', playsinline='', autobuffer='', loop='', muted='')
+              .sale_cont_flex_item.sale_cont_flex_item2.video_block_box
+                img(src="img/placeholder.png").vid_img_hide
+                video.vid_show(src='img/adasd_vnG0VlFp.compressed.mp4', playsinline='', autobuffer='', loop='', muted='')
+              .sale_cont_flex_item.sale_cont_flex_item2.video_block_box
+                img(src="img/placeholder.png").vid_img_hide
+                video.vid_show(src='img/adasd_vnG0VlFp.compressed.mp4', playsinline='', autobuffer='', loop='', muted='')
+              .sale_cont_flex_item.sale_cont_flex_item2.video_block_box
+                img(src="img/placeholder.png").vid_img_hide
+                video.vid_show(src='img/adasd_vnG0VlFp.compressed.mp4', playsinline='', autobuffer='', loop='', muted='')
+              .sale_cont_flex_item.sale_cont_flex_item3.sale_cont_flex_item_video.video_block_box
+                button.play_vid
+                  include ../../img/btnPlay.svg
+                video.vid_show(src='img/adasd_vnG0VlFp.compressed.mp4', playsinline='', autobuffer='', loop='', muted='')
+              .sale_cont_flex_item.sale_cont_flex_item2.video_block_box
+                img(src="img/placeholder.png").vid_img_hide
+                video.vid_show(src='img/adasd_vnG0VlFp.compressed.mp4', playsinline='', autobuffer='', loop='', muted='')
+              .sale_cont_flex_item.sale_cont_flex_item2.video_block_box
+                img(src="img/placeholder.png").vid_img_hide
+                video.vid_show(src='img/adasd_vnG0VlFp.compressed.mp4', playsinline='', autobuffer='', loop='', muted='')
+            .swiper-slide.sale_cont_flex
+              .sale_cont_flex_item.sale_cont_flex_item3.sale_cont_flex_item_video.video_block_box
+                button.play_vid
+                  include ../../img/btnPlay.svg
+                video.vid_show(src='img/adasd_vnG0VlFp.compressed.mp4', playsinline='', autobuffer='', loop='', muted='')
+              .sale_cont_flex_item.sale_cont_flex_item2.video_block_box
+                img(src="img/placeholder.png").vid_img_hide
+                video.vid_show(src='img/adasd_vnG0VlFp.compressed.mp4', playsinline='', autobuffer='', loop='', muted='')
+              .sale_cont_flex_item.sale_cont_flex_item2.video_block_box
+                img(src="img/placeholder.png").vid_img_hide
+                video.vid_show(src='img/adasd_vnG0VlFp.compressed.mp4', playsinline='', autobuffer='', loop='', muted='')
+              .sale_cont_flex_item.sale_cont_flex_item2.video_block_box
+                img(src="img/placeholder.png").vid_img_hide
+                video.vid_show(src='img/adasd_vnG0VlFp.compressed.mp4', playsinline='', autobuffer='', loop='', muted='')
+              .sale_cont_flex_item.sale_cont_flex_item2.video_block_box
+                img(src="img/placeholder.png").vid_img_hide
+                video.vid_show(src='img/adasd_vnG0VlFp.compressed.mp4', playsinline='', autobuffer='', loop='', muted='')
+              .sale_cont_flex_item.sale_cont_flex_item2.video_block_box
+                img(src="img/placeholder.png").vid_img_hide
+                video.vid_show(src='img/adasd_vnG0VlFp.compressed.mp4', playsinline='', autobuffer='', loop='', muted='')
+              .sale_cont_flex_item.sale_cont_flex_item2.video_block_box
+                img(src="img/placeholder.png").vid_img_hide
+                video.vid_show(src='img/adasd_vnG0VlFp.compressed.mp4', playsinline='', autobuffer='', loop='', muted='')
+              .sale_cont_flex_item.sale_cont_flex_item2.video_block_box
+                img(src="img/placeholder.png").vid_img_hide
+                video.vid_show(src='img/adasd_vnG0VlFp.compressed.mp4', playsinline='', autobuffer='', loop='', muted='')
+              .sale_cont_flex_item.sale_cont_flex_item2.video_block_box
+                img(src="img/placeholder.png").vid_img_hide
+                video.vid_show(src='img/adasd_vnG0VlFp.compressed.mp4', playsinline='', autobuffer='', loop='', muted='')
+              .sale_cont_flex_item.sale_cont_flex_item3.sale_cont_flex_item_video.video_block_box
+                button.play_vid
+                  include ../../img/btnPlay.svg
+                video.vid_show(src='img/adasd_vnG0VlFp.compressed.mp4', playsinline='', autobuffer='', loop='', muted='')
+              .sale_cont_flex_item.sale_cont_flex_item2.video_block_box
+                img(src="img/placeholder.png").vid_img_hide
+                video.vid_show(src='img/adasd_vnG0VlFp.compressed.mp4', playsinline='', autobuffer='', loop='', muted='')
+              .sale_cont_flex_item.sale_cont_flex_item2.video_block_box
+                img(src="img/placeholder.png").vid_img_hide
+                video.vid_show(src='img/adasd_vnG0VlFp.compressed.mp4', playsinline='', autobuffer='', loop='', muted='')
+              .sale_cont_flex_item.sale_cont_flex_item2.video_block_box
+                img(src="img/placeholder.png").vid_img_hide
+                video.vid_show(src='img/adasd_vnG0VlFp.compressed.mp4', playsinline='', autobuffer='', loop='', muted='')
+              .sale_cont_flex_item.sale_cont_flex_item2.video_block_box
+                img(src="img/placeholder.png").vid_img_hide
+                video.vid_show(src='img/adasd_vnG0VlFp.compressed.mp4', playsinline='', autobuffer='', loop='', muted='')
+              .sale_cont_flex_item.sale_cont_flex_item3.sale_cont_flex_item_video.video_block_box
+                button.play_vid
+                  include ../../img/btnPlay.svg
+                video.vid_show(src='img/adasd_vnG0VlFp.compressed.mp4', playsinline='', autobuffer='', loop='', muted='')
+              .sale_cont_flex_item.sale_cont_flex_item2.video_block_box
+                img(src="img/placeholder.png").vid_img_hide
+                video.vid_show(src='img/adasd_vnG0VlFp.compressed.mp4', playsinline='', autobuffer='', loop='', muted='')
+              .sale_cont_flex_item.sale_cont_flex_item2.video_block_box
+                img(src="img/placeholder.png").vid_img_hide
+                video.vid_show(src='img/adasd_vnG0VlFp.compressed.mp4', playsinline='', autobuffer='', loop='', muted='')
+block footer
+  include ../blocks/footer.pug

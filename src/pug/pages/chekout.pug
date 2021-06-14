@@ -1,0 +1,235 @@
+extends ../layout/layout.pug
+
+block variables
+  - var title = 'Main';
+
+block links
+  - var link = 'main.css';
+
+block scripts
+  - var js = 'index.js';
+
+block header
+  include ../blocks/header.pug
+
+block content
+  .big_Container.chekout
+    .chekout_cont
+      .chekout_cont_form
+        h1 ¶Üàð¸Æ îìÚ²ÈÜºðÀ
+        .set_parking
+          .set_parking_cont
+            h2 ÀÜîðºÈ ¸ÆîØ²Ü îºÔÀ
+            .set_parking_cont_monitor
+              img(src="img/Groupasc268.png")
+              p ¾Îð²Ü
+            .section
+              p A
+              .section_flex
+                button(value="A1").add_mest.sedan
+                button(value="A2").add_mest.sedan
+                button(value="A3").sedan.zanyat
+                button(value="A4").sedan.zanyat
+                button(value="A5").zanyat.raly
+                button(value="A6").zanyat.raly
+                button(value="A7").zanyat.raly
+                button(value="A8").sedan.zanyat
+                button(value="A9").sedan.zanyat
+                button(value="A10").add_mest.raly
+                button(value="A11").add_mest.raly
+            .section
+              p B
+              .section_flex
+                button(value="B1").add_mest.raly
+                button(value="B2").add_mest.raly
+                button(value="B3").zanyat.raly
+                button(value="B4").add_mest.raly
+                button(value="B5").add_mest.raly
+                button(value="B6").add_mest.raly
+                button(value="B7").add_mest.raly
+                button(value="B8").add_mest.raly
+                button(value="B9").add_mest.sedan
+                button(value="B10").add_mest.sedan
+                button(value="B11").add_mest.sedan
+                button(value="B12").add_mest.sedan
+            .section
+              p C
+              .section_flex
+                button(value="C1").zanyat.raly
+                button(value="C2").zanyat.raly
+                button(value="C3").zanyat.raly
+                button(value="C4").add_mest.raly
+                button(value="C5").add_mest.raly
+                button(value="C6").add_mest.sedan
+                button(value="C7").add_mest.sedan
+                button(value="C8").sedan.zanyat
+                button(value="C9").sedan.zanyat
+                button(value="C10").sedan.zanyat
+                button(value="C11").sedan.zanyat
+                button(value="C12").sedan.zanyat
+                button(value="C13").add_mest.sedan
+                button(value="C14").add_mest.sedan
+                button(value="C15").add_mest.sedan
+                button(value="C16").add_mest.raly
+                button(value="C17").add_mest.raly
+                button(value="C18").zanyat.raly
+                button(value="C19").add_mest.raly
+                button(value="C20").add_mest.raly
+            .section
+              p D
+              .section_flex
+                button(value="D1").sedan.zanyat
+                button(value="D2").sedan.zanyat
+                button(value="D3").add_mest.raly
+                button(value="D4").zanyat.raly
+                button(value="D5").add_mest.sedan
+                button(value="D6").add_mest.raly
+                button(value="D7").add_mest.sedan
+                button(value="D8").add_mest.sedan
+                button(value="D9").add_mest.sedan
+                button(value="D10").add_mest.sedan
+                button(value="D11").add_mest.sedan
+                button(value="D12").selected.raly.add_mest
+                button(value="D13").add_mest.raly
+                button(value="D14").add_mest.raly
+                button(value="D15").add_mest.raly
+                button(value="D16").add_mest.raly
+                button(value="D17").zanyat.raly
+                button(value="D18").zanyat.raly
+                button(value="D19").zanyat.raly
+                button(value="D20").sedan.zanyat
+            .section
+              p E
+              .section_flex
+                button(value="E1").add_mest.sedan
+                button(value="E2").add_mest.sedan
+                button(value="E3").sedan.zanyat
+                button(value="E4").sedan.zanyat
+                button(value="E5").zanyat.raly
+                button(value="E6").zanyat.raly
+                button(value="E7").zanyat.raly
+                button(value="E8").sedan.zanyat
+                button(value="E9").sedan.zanyat
+                button(value="E10").add_mest.raly
+                button(value="E11").add_mest.raly
+            .set_parking_cont_bottom
+              .set_parking_cont_bottom_left
+                p
+                  span(style="background: linear-gradient(165.16deg, #86234F 2.52%, rgba(134, 35, 79, 0.21) 249.32%)")
+                  |²ØºÜ²¶Ü²ò
+                p
+                  span(style="background: linear-gradient(163.54deg, #F49B4C 1.9%, rgba(244, 155, 76, 0.26) 240.57%)")
+                  |êº¸²Ü
+                p
+                  span(style="background: linear-gradient(145.73deg, #FFFFFF 15.09%, rgba(255, 255, 255, 0) 345.29%)")
+                  |²¼²î
+                p
+                  span(style="background: linear-gradient(147.67deg, #D24644 19.38%, rgba(210, 70, 68, 0) 301.71%)")
+                  |¼´²Ôì²Ì
+                p
+                  span(style="background: linear-gradient(141.45deg, #5CDC45 12.15%, rgba(92, 220, 69, 0) 390.35%)")
+                  |ÀÜîðì²Ì
+              .set_parking_cont_bottom_right
+                h4 OPEN AIR ZONE
+                .set_parking_cont_bottom_right_item
+                  span.add
+                  span.add
+                  span.add
+                  span.zanyat
+                  span.add
+                  span.add
+                  span.zanyat
+                .set_parking_cont_bottom_right_item
+                  span.zanyat
+                  span.zanyat
+                  span.add
+                  span.add
+                  span.zanyat
+                  span.add
+                  span.add
+                .set_parking_cont_bottom_right_item
+                  span.add
+                  span.add
+                  span.zanyat
+                  span.zanyat
+                  span.zanyat
+                  span.zanyat
+                  span.add
+                .set_parking_cont_bottom_right_item
+                  span.add
+                  span.zanyat
+                  span.zanyat
+                  span.add
+                .set_parking_cont_bottom_right_item
+                  span.add
+                  span.zanyat
+        form
+          .chekout_cont_form_item
+            label ØºøºÜ²ÚÆ Ð²Ø²ð²ÜÆÞºð*
+              input(type="text" placeholder="34 AV 134")
+            label.select_mest Î²Ú²ÜØ²Ü Ð²Ø²ð²ÜÆÞ*
+              input(type="text" placeholder="D12")
+              a.open_mest
+                include ../../img/dots-menu1.svg
+          .chekout_cont_form_item
+            label ²ÜàôÜ
+              input(type="text" placeholder="River")
+            label ²¼¶²ÜàôÜ
+              input(type="text" placeholder="Sideyan")
+          .chekout_cont_form_item
+            label Ðºè²Êàê²Ð²Ø²ð*
+              input(type="text" placeholder="+374 93 65 88 88")
+            label ¾È.Ð²êòº
+              input(type="text" placeholder="riverside@gmail.com")
+          .chekout_cont_form_item_comment
+            label ²ìºÈÆÜ
+              textarea
+          .chekout_cont_form_item_btn
+            label ØºøºÜ²ÚÆ îºê²ÎÀ
+              input(type="text" placeholder="SUV/Jeep")
+              a
+                include ../../img/clear.svg
+      .chekout_cont_itog
+        h2 ä²îìÆðì²Ì Æðºð
+        .chekout_cont_itog_item
+          p îð²Üêäàðî²ÚÆÜ îàØê
+            span 1x
+          p 4000¸ð©
+        .chekout_cont_itog_item
+          p Ð²ìÆ ´àôð¶ºð (ÎÌàô)
+            span 1x
+          p 600¸ð©
+        .chekout_cont_itog_item
+          p êààôê
+            span 1x
+          p 1800¸ð©
+        .chekout_cont_itog_item
+          p ²Ôò²Ü Îºê²ð
+            span 1x
+          p 1200¸ð©
+        .chekout_cont_itog_item
+          p Ð²ìÆ ÂºìÆÎÜºð
+            span 1x
+          p 1400¸ð©
+        .chekout_cont_itog_item_itogprice
+          p ÀÜ¸Ð²Üàôð ²ðÄºøÀ
+          p 5000¸ð©
+        form
+          h4 ìÖ²ðºÈ
+          .chekout_cont_itog_flex
+            label
+              input(type="checkbox")
+              span.chek
+              .chekout_cont_itog_flex_text
+                p ²Ú¸Æ ´²ÜÎ (Æ¸ð²Ø)
+                span Լորեմ Իպսումը տպագրական արդյունաբերության համար նախատեսված մոդելային տեքստ է։
+            label
+              input(type="checkbox")
+              span.chek
+              .chekout_cont_itog_flex_text
+                p ¾ìàÎ² ´²ÜÎ
+                span Լորեմ Իպսումը տպագրական արդյունաբերության համար նախատեսված մոդելային տեքստ է։
+          label.send
+            input(type="submit" value="ä²îìÆðºÈ")
+block footer
+  include ../blocks/footer.pug
